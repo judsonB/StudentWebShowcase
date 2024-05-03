@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div id="main-wrapper" onclick="onClick()">
+            <div id="phase0" class="button-container">
+                <h2 id="button-text">CHOOSE YOUR WEAPON!</h2>
+                <div id="buttonr" onclick="onChooseWeapon('r')">
+                    <img src="r.png" alt="">
+                </div>
+                <div id="buttonp" onclick="onChooseWeapon('p')">
+                    <img src="p.png" alt="">
+                </div>
+                <div id="buttons" onclick="onChooseWeapon('s')">
+                    <img src="s.png" alt="">
+                </div>
+            </div>
+            <div id="phase1" hidden>
+                <h1 id="explode-txt">asdf</h1>
+            </div>
+            <div id="phase2" hidden>
+                <div id="choices">
+                    <div id="player">
+                        <h1>YOU</h1>
+                        <img id="player-img" src="p.png" alt="">
+                    </div>
+                    <div id="bot">
+                        <h1>BOT</h1>
+                        <img id="bot-img" src="r.png" alt="">
+                    </div>
+                </div>
+                <div id="results">
+                    <hr>
+                    <div id="txt">
+                        <h1 id="result">You Lose!</h1>
+                        <h2>Games Played: <span id="games-played"></span></h2>
+                        <h2> Player Wins: <span id="player-wins"></span></h2>
+                        <h2>    Bot Wins: <span id="bot-wins"></span></h2>
+                        <h2>Click to play again!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="rps.js" defer></script>
+    </body>
+</html>

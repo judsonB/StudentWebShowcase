@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: black;
+    background: linear-gradient(180deg, rgba(104,86,180,1) 0%, rgba(77,66,124,1) 25%, rgba(0,0,0,1) 100%);
+
+    color: white;
+}
+
+#main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1200px;
+    margin: 10px auto;
+    height: 900px;
+
+    border: 2px solid white;
+}
+
+.fade-out {
+    transition: .7s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fade-in {
+    transition: .7s;
+    opacity: 1 !important;
+}
+
+.button-container {
+    position: absolute;
+    /* left: 200px; */
+    width: 600px;
+    height: 600px;
+}
+
+#buttonr, #buttonp, #buttons {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+
+    background: rgba(0, 0, 0, 0.192);
+    border: 2px solid white;
+    border-radius: 10000px;
+}
+#buttonr:hover, #buttonp:hover, #buttons:hover {
+    transition: .1s;
+    background: rgba(172, 172, 172, 0.192);
+}
+#buttonr:active, #buttonp:hover:active, #buttons:hover:active {
+    transition: .03s;
+    background: rgba(0, 0, 0, 0.39);
+}
+
+#buttonr img, #buttonp img, #buttons img {
+    width: 180px;
+    height: 180px;
+}
+
+#buttonr {
+    left: 200px;
+}
+#buttonp {
+    top: 350px;
+    left: 0px;
+}
+#buttons {
+    top: 350px;
+    left: 400px;
+}
+
+#button-text {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 253, 142);
+    position: absolute;
+    left: 0px;
+    top: 270px;
+    width: 600px;
+    text-align: center;
+}
+
+#explode-txt {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    opacity: 0;
+}
+
+#choices {
+    display: flex;
+}
+
+#choices div {
+    opacity: 0;
+    width: 600px;
+    padding: 20px;
+
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+#choices div > * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+#choices div img {
+    width: 400px;
+    margin-left: 100px;
+}
+
+#results {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+#results hr {
+    border-top: 3px solid white;
+    width: 1200px;
+}
+
+#results #txt {
+    font-family: monospace;
+    width: fit-content;
+    margin: auto;
+}
+
+#results h1 {
+    color: pink;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    margin-top: .4lh;
+    margin-bottom: 1lh;
+}
